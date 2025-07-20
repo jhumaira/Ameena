@@ -4,7 +4,7 @@ export default function Hero() {
         {/* Arabic calligraphy image */}
         <div className="mb-8">
           <img
-            src="images/bismillah.svg"
+            src="images/Bismillah_rose.svg"
             alt="Bismillah calligraphy"
             className="mx-auto h-20 sm:h-28 opacity-80"
           />
