@@ -2,7 +2,7 @@ const teachers = [
     {
       name: "Ustadha Ameena",
       bio: "Specialist in Tajweed and Arabic Grammar",
-      img: "/icons/hijab.png",
+      img: "images/hijab.png",
     },
 
   ];

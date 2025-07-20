@@ -4,7 +4,7 @@ export default function Hero() {
         {/* Arabic calligraphy image */}
         <div className="mb-8">
           <img
-            src="/images/bismillah.svg"
+            src="images/bismillah.svg"
             alt="Bismillah calligraphy"
             className="mx-auto h-20 sm:h-28 opacity-80"
           />
@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto text-left">
           {/* Feature 1: Female-led */}
           <div className="flex items-start gap-4">
-            <img src="/icons/hijabicon.png" alt="Female-led" className="w-10 h-10" />
+            <img src="images/hijabicon.png" alt="Female-led" className="w-10 h-10" />
             <p className="text-gray-800">
               <strong className="text-brandForest">Female-led instruction</strong> with Ijazah certified scholars.
             </p>
@@ -46,7 +46,7 @@ export default function Hero() {
   
           {/* Feature 2: Scheduling */}
           <div className="flex items-start gap-4">
-            <img src="/icons/calendar.png" alt="Flexible scheduling" className="w-10 h-10" />
+            <img src="images/calendar.png" alt="Flexible scheduling" className="w-10 h-10" />
             <p className="text-gray-800">
               <strong className="text-brandForest">Flexible scheduling</strong> with live and recorded options.
             </p>
@@ -54,7 +54,7 @@ export default function Hero() {
   
           {/* Feature 3: Community */}
           <div className="flex items-start gap-4">
-            <img src="/icons/community.png" alt="Supportive community" className="w-10 h-10" />
+            <img src="images/community.png" alt="Supportive community" className="w-10 h-10" />
             <p className="text-gray-800">
               <strong className="text-brandForest">Supportive community</strong> for women at every level.
             </p>
