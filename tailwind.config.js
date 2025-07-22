@@ -7,15 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        brandDark: "#0F331E",
-        brandRose: "#81586F",
-        brandBeige: "#FFFDFB",
-        brandLight: "#F5F9F6",
-        brandForest: "#164F2A",
-      },
-      fontFamily: {
-        serif: ["Playfair Display", "serif"],
-        sans: ["Inter", "sans-serif"],
+        brand: {
+          dark: "#0F331E",
+          rose: "#81586F",
+          beige: "#FFFDFB",
+          light: "#F5F9F6",
+          forest: "#164F2A",
+        },
       },
     },
   },

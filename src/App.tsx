@@ -6,10 +6,12 @@ import Schedule from "./components/Schedule";
 import Teachers from "./components/Teachers";
 import Contact from "./components/Contact";
 
-// New course detail pages
+// Pages
 import IntroArabic from "./pages/IntroArabic";
 import QuranTajweed from "./pages/QuranTajweed";
 import TafsirForWomen from "./pages/TafsirForWomen";
+import LoginPage from "./pages/LoginPage";
+import PrivateRoute from "./components/PrivateRoute";
 
 function Home() {
   return (
@@ -27,10 +29,43 @@ function Home() {
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/intro-arabic" element={<IntroArabic />} />
-      <Route path="/quran-tajweed" element={<QuranTajweed />} />
-      <Route path="/tafsir-for-women" element={<TafsirForWomen />} />
+      {/* 🛑 Default route is now the login page */}
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/login" element={<LoginPage />} />
+
+      {/* ✅ All other routes are protected */}
+      <Route
+        path="/home"
+        element={
+          <PrivateRoute>
+            <Home />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/intro-arabic"
+        element={
+          <PrivateRoute>
+            <IntroArabic />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/quran-tajweed"
+        element={
+          <PrivateRoute>
+            <QuranTajweed />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/tafsir-for-women"
+        element={
+          <PrivateRoute>
+            <TafsirForWomen />
+          </PrivateRoute>
+        }
+      />
     </Routes>
   );
 }
